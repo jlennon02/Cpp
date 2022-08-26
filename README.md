@@ -1,3 +1,3 @@
 # CComp2-2.2---Jairo-
-"hola mundo"
-"int commit=12;"
+"hola mundo \n"
+"int commit=12"
