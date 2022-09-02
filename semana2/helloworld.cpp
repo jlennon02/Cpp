@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
-
+/*
+programa qe recibe enteros por teclado e imprime la suma de ambos
+*/
 int main (){
-    cout<<"hola mundo"<<endl;
+    // declarando variables
     int a;
     int b;
     cout<<"ingrese un valor para ""a"": ";
