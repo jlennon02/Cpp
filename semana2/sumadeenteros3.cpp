@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 int main (){
-
+/*
     int a;
-    
+
     int b;
 
     int suma=a+b;
@@ -11,4 +11,9 @@ int main (){
     cout<<"el resultado es : "<<suma;
 
     return 0;
+*/
+int a=2;
+
+cout<<a%100;
+
 }
