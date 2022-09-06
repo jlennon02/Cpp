@@ -9,10 +9,5 @@ int main (){
     int numeroentero;
     cout<<"ingrese el numero de 5 digitos: ";
     cin>>numeroentero;
-
-    
-
-
-
     return 0;
 }
