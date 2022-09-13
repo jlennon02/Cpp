@@ -8,9 +8,11 @@ public:
             balance = initialBalance;
         }
     }
-    void deposit(int depositAmount){
-        if (depositAmount>0){
-            balance = balance + depositAmount;
+    void whitdraw(int whitdrawAmount) {
+        if (balance>whitdrawAmount){
+            balance = balance - whitdrawAmount;
+        else:
+            std::cout << "Withdrawal amount exceeded account balance.\n";
         }
     }
     int getBalance() const {
