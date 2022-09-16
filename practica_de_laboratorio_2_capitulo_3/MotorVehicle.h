@@ -1,12 +1,17 @@
 #include <string>
 //  
 class MotorVehicle{
+private:
+    std::string maker;
+    std::string fuel;
+    std::string color;
+    int year;
+    int capacity;
+public:
     MotorVehicle(std::string Make, std::string fuel_type, std::string Color,int year_of_manufacture, int engine_capacity)
-    :make{Make}
-    fuel{fuel_type}
-    color{Color}
+    :maker{Make},fuel{fuel_type},color{Color},year{year_of_manufacture},capacity{engine_capacity}
     { 
-        yaer=year_of_manufacture;
+        year=year_of_manufacture;
         if(engine_capacity>0){
             capacity = engine_capacity;
         }
@@ -14,10 +19,10 @@ class MotorVehicle{
 
 
     void setmake(std::string Make) {
-        make = Make;
+        maker = Make;
     }
     std::string getmake() const {
-        return make;
+        return maker;
     }
 
     void setfuel(std::string fuel_type) {
@@ -34,10 +39,10 @@ class MotorVehicle{
         return color;
     }
 
-    int getyear_of_manufacture() const {
+    int getyear() const {
         return year;
     }
-    int getengine_capacity() const {
+    int getcapacity() const {
         return capacity;
     }
 

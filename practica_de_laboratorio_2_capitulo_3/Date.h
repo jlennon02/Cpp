@@ -3,8 +3,7 @@
 class Date{
 public:
     Date(int month,int day,int Year)
-    :dia{day},year{Year}
-    {
+    : dia{day}{
         if(month>=1 && month<=12){
             mes= month;
         }
@@ -30,5 +29,7 @@ public:
     }
 
 private:
-    int month{1};
+    int mes{1};
+    int dia;
+    int year;
 };
