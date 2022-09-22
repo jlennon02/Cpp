@@ -2,21 +2,21 @@
 using namespace std;
 
 int main(){
-
+  int pos=6;
   int i=1;
-  
-
-    for(int j=1;j<=i;j++){
-      if(i%j==0){
-        contfact++;
-      }
+  bool fina =false;
+  while(i>=1){
+    if(i==12){
+      fina=true;
     }
-    if(cont==2){
-      i++;
-      cout<<pos<<endl;
+    if(fina==true){
       break;
     }
-    }
+    cout<<i;
+    i++;
+  }
+  
+  
   
   return 0;
 }
