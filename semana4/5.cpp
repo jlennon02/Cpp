@@ -2,7 +2,7 @@
 using namespace std;
 int main() {
     int num=1;
-    
+    ///////////////////////////////////////////////////
     for (;num>=1;num++){
       int cont=0; 
       bool verdad=false;
