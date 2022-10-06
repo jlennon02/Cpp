@@ -1,29 +1,29 @@
-#ifndef __Point_H__
-#define __Point_H__
-#include <iostream>
-using namespace std;
+#ifndef __POINT_H__
+#define __POINT_H__
 
-class Point{
+#include <iostream>
+
+class Point {
     public:
-        Point(int _x=0, int _y=0):x(_x),y(_y){}
-        void setX(int _x){
-            x=_x;
+        Point(int _x = 0, int _y = 0) : x(_x), y(_y) {}
+
+        void setX(int _x) {
+            x = _x;
         }
-        int getX() const{
+        int getX() const {
             return x;
         }
-        void setY(int _y){
-            y=_y;
+        void setY(int _y) {
+            y = _y;
         }
-        int getY()const{
+        int getY() const {
             return y;
         }
 
-        void print() const{
-            cout<<"("<<x<<", "<<y<<")"<<endl;
+        void print() const {
+            std::cout << "(" << x << ", " << y << ")";
         }
-
     private:
-    int x,y;
+        int x, y;
 };
 #endif
