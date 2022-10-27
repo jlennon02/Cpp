@@ -8,8 +8,8 @@ void intercambio(int* a,int* b){
     int temp =*a;
     *a=*b;
     *b= temp;
-
 }
+
 int main(){
     /*
     int y=4;
