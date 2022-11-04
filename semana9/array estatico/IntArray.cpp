@@ -1,24 +1,25 @@
 #include <iostream>
 #include "IntArray.h"
+#include "Point.h"
 
 IntArray::IntArray(int size) {
-    data = new int[size];
+    data = new Point[size];
     this->size = size;
 }
 
 IntArray::IntArray(const IntArray &o) {
     size = o.size;
-    data = new int[o.size];
+    data = new Point[o.size];
     for(int i = 0; i < size; i++)
         data[i] = o.data[i];
 }
 
-void IntArray::setAt(int index, int value) {
+void IntArray::setAt(int index, Point value) {
     if(index >= 0 && index < size)
         data[index] = value;
 }
 
-int IntArray::getAt(int index) const {
+Point IntArray::getAt(int index) const {
     if(index >= 0 && index < size)
         return data[index];            
 }

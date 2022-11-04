@@ -31,6 +31,10 @@ void DynamicIntArray::print() const {
     std::cout << "]" << std::endl;
 }
 
+int DynamicIntArray::operator<<(int elem){
+    
+}
+
 void DynamicIntArray::push_back(int elem) {
     // 1
     int *tmp = new int[size + 1];
@@ -78,9 +82,7 @@ void DynamicIntArray::remove(int pos) {
             i++;
             tmp[j] = data[i];
         }
-        else{
-            tmp[j] = data[i];
-        }
+        tmp[j] = data[i];
     }
     size -= 1;
     delete [] data;
