@@ -1,5 +1,7 @@
 #include <iostream>
 #include "DynamicIntArray.h"
+#include "Point.h"
+
 
 DynamicIntArray::DynamicIntArray() {
     this->size = 0;
